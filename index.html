@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat con Flowey</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
@@ -14,14 +15,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             font-size: 12px;
         }
 
         #app {
             width: 100%;
             max-width: 600px;
-            height: 100%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             background-color: #111;
@@ -120,8 +121,7 @@
             cursor: pointer;
         }
     </style>
-</head>                
-    
+</head>
 <body>
     <div id="app">
         <div id="chat-header">
@@ -130,9 +130,9 @@
         </div>
         <div id="chat-container">
             <div class="chat-message character">
-                <img class="avatar" src="https://www.pngkit.com/png/full/565-5658657_undertale-sprite-flowey-undertale-flowey-sprite.png" alt="Flowey">
+                <img class="avatar" src="https://www.pngkit.com/png/full/565-5658657_undertale-sprite-flowey-undertale-flowey-sprite.png"" alt="Flowey">
                 <div class="message-text">
-                    <p><strong><span style="color:#65e714;">:</span></strong> ¡Hola! Soy Flowey y estoy aquí para guiarte en tu viaje. ¿En qué puedo ayudarte?</p>
+                    <p><strong><span style="color:#65e714;">Flowey:</span></strong> ¡Hola! Soy Flowey y estoy aquí para guiarte en tu viaje. ¿En qué puedo ayudarte?</p>
                 </div>
             </div>
         </div>
@@ -144,4 +144,3 @@
     <script src="chat.js"></script>
 </body>
 </html>
-
